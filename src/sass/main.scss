@@ -1,0 +1,27 @@
+@import "vars.scss";
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+//Custom Styles Here
+body{
+	padding: 50px 0;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	@include clearfix;
+}
+
+
+//Responsive
+@import "media.scss";
